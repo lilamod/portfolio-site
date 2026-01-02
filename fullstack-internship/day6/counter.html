@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Counter App</title>
+  <style>
+    body {
+      display: flex;
+      height: 100vh;
+      justify-content: center;
+      align-items: center;
+      font-family: Arial, sans-serif;
+      background: #f4f4f4;
+    }
+
+    .counter-box {
+      background: white;
+      padding: 30px;
+      border-radius: 10px;
+      text-align: center;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+
+    .count {
+      font-size: 48px;
+      margin: 20px 0;
+    }
+
+    button {
+      font-size: 24px;
+      width: 60px;
+      height: 60px;
+      margin: 0 10px;
+      cursor: pointer;
+      border: none;
+      border-radius: 8px;
+    }
+
+    .plus {
+      background: #4caf50;
+      color: white;
+    }
+
+    .minus {
+      background: #f44336;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="counter-box">
+    <h2>Counter App</h2>
+    <div class="count" id="count">0</div>
+    <button class="minus" onclick="decrease()">−</button>
+    <button class="plus" onclick="increase()">+</button>
+  </div>
+
+  <script>
+    let count = 0;
+
+    function increase() {
+      count++;
+      document.getElementById("count").textContent = count;
+    }
+
+    function decrease() {
+      count--;
+      document.getElementById("count").textContent = count;
+    }
+  </script>
+
+</body>
+</html>

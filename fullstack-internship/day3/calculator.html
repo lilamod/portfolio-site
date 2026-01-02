@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Add two input and select the operation</title>
+    <link rel ="stylesheet" type="text/css" href="style.css" >
+  </head>
+  <body>
+    <form class ="form-group">
+        <label>Input 1:</label>
+        <input type ="text" id="input1" name = "value1" ><br><br>
+        <label>Input2: </label>
+        <input type="text" id = "input2" name = "value2"><br><br>
+        <label for="Select Operation method">Choose a Option:</label>
+        <select name="option" id="option">
+          <option value="">Please Select an Option</option>
+          <option value="add"> Add</option>
+          <option value="subtraction"> Subtraction</option>
+          <option value="multiplication"> Multiplication</option>
+          <option value="division">Division</option>
+        </select><br><br>
+        <button type="button" onclick="displayValues()">Calculate</button>
+    </form>
+    <p id="output"></p>
+    <script src="script.js" ></script>
+</body>
+</html>

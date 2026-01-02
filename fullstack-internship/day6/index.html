@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>This is DOM Manipulation and events</title>
+    </head>
+    <body id ="body-group">
+        <a target="_blank" href="about.jpg">
+        <img src="about.jpg" alt="Description of image">
+        </a>
+        <p id ="demo"></p>
+        <h1 class ="title">Hello World</h1>
+        <p id ="para" >Change Color and Font-size</p>
+        <form>
+            <label>Name: </label>
+            <input id = "name" type ="text" name= "name"/>
+            <p id= "display"></p>
+            <button type= "button" onclick= "changeColor()">Click Me to Change Background</button><br><br>
+            <button id ="btn">Click Me</button><br><br>
+
+            <label>Add Task Item: </label>
+            <input type="text" id="taskList" />
+            <button id ="addTask">Add Item</button>
+             <div class="count" id="count">0</div>
+        <button class="minus" onclick="decrease()">−</button>
+        <button class="plus" onclick="increase()">+</button>
+    
+        </form>
+        <ul id ="tasklist">
+        </ul>
+
+        <label>Add short message</label>
+        <textarea id="textarear" rows="4" cols="40"></textarea>
+        <p id="counter">0 / 280</p>
+
+        <script src ="script.js">
+        </script>
+    </body>
+</html>
