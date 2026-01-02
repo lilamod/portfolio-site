@@ -5,7 +5,7 @@ const User = require("./models/user.model")
 const bcrypt = require("bcryptjs");
 const jwt = require("jsonwebtoken");
 
-mongoose.connect("mongodb+srv://lilamod6547_db_user:OEEzEpi9xZNTLqt1@cluster0.lx6ixkp.mongodb.net/text")
+mongoose.connect("mongodb://localhost:27017/text")
 .then(() => {
     console.log("Connected");
 })
