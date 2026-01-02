@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>This is contact form</title>
+        <link rel ="stylesheet" type="text/css" href="contact.css" />
+    </head>
+    <body>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#image">Image</a></li>
+            </ul>
+        </nav>
+        <section id ="home">
+            <h1>Welcome to Home Page</h1>
+            <p>I am Full Stack Developer</p>
+        </section>
+        <section id="about">
+            <h2>Welcome to About Page</h2>
+            <p>My Name is Rohit and I completed master degree in Computer.</p>
+        </section>
+         <section id="projects">
+            <h2>Projects</h2>
+            <div class="projects" id="projectList"></div>
+        </section>
+        <section id="contact">
+            <h4>Contact Me</h4>
+            <form id="contactForm">
+                <label>Name:</label>
+                <input type ="text" id="name" placeholder="Enter your name" required ><br><br>
+                <label>Email: </label>
+                <input type="email" id="email" placeholder="Enter your email" required><br><br>
+                <label>Contact Number:</label>
+                <input type="text" id="phonenumber" placeholder="Enter your contact number" required><br><br>
+                <label>Message:</label>
+                <textarea id="message" placeholder="Your Message" required></textarea><br><br>
+                <p class="error" id="formError"></p>
+                <button type="submit">Send</button>
+            </form>
+        </section>
+        <section id ="image">
+            <h5>Welcome to Image Page</h5>
+            <img src="profile.jpg" alt="Image of profile" class="img-hover">
+        </section>
+        <h1>Toggle Dark Mode</h1>
+        <button id="theme-toggle">Toggle dark mode</button>
+        <script src="contact.js"></script>
+    </body>
+</html>

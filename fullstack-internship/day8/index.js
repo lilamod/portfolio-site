@@ -139,7 +139,12 @@ function simulateDownload(file){
 }
 
 async function downloadFile (){
-    const file1 = await simulateDownload('file')
+    const file1 = await simulateDownload('sample-1.zip');
+    console.log(file1);
+    const file2 = await simulateDownload('sample-2.zip');
+    console.log(file2);
+    const file3 = await simulateDownload('sample-3.zip');
+    console.log(file3);s
 }
 
  function getWeather(city) {
