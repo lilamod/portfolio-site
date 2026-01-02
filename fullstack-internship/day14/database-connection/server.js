@@ -3,7 +3,7 @@ const app = express();
 const mongoose = require("mongoose");
 const router = require("./routers/index");
 
-mongoose.connect("mongodb+srv://username:password@cluster.mongodb.net/mydb")
+mongoose.connect("")
 .then(()=> {
     console.log("database connected successfully")
 })
