@@ -1,0 +1,11 @@
+.completed {
+    text-decoration: line-through;
+    color: gray;
+}
+
+.category {
+    margin-left: 10px;
+    font-size: 12px;
+    color: #555;
+}
+

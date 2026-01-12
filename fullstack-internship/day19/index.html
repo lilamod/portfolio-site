@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Task Manager</title>
+    <style>
+        body {
+            font-family: Arial;
+            max-width: 600px;
+            margin: auto;
+        }
+        .completed {
+            text-decoration: line-through;
+            color: gray;
+        }
+        li {
+            margin: 8px 0;
+        }
+        select, input {
+            margin: 5px 0;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Task Manager</h1>
+
+    <!-- USER SELECT -->
+    <label>User:</label>
+    <select id="userSelect" onchange="loadTasks()"></select>
+
+    <br><br>
+
+    <!-- TASK INPUT -->
+    <input id="taskInput" placeholder="New Task">
+
+    <select id="category">
+        <option value="Work">Work</option>
+        <option value="Personal">Personal</option>
+        <option value="Urgent">Urgent</option>
+    </select>
+
+    <button onclick="addTask()">Add Task</button>
+
+    <ul id="taskList"></ul>
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
