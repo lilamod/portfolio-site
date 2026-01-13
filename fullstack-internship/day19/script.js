@@ -1,5 +1,5 @@
-const TASK_API = "http://localhost:3000/tasks";
-const USER_API = "http://localhost:3000/users";
+const TASK_API = "https://portfolio-site-cyaa.onrender.com/tasks";
+const USER_API = "https://portfolio-site-cyaa.onrender.com/users";
 
 async function loadUsers() {
     const res = await axios.get(USER_API);
