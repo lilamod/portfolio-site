@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Blogs</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+  <!-- CREATE / UPDATE BLOG -->
+  <h2>Create / Update Blog</h2>
+  <form id="blogForm">
+    <input type="hidden" id="blogId">
+
+    <label>Title</label>
+    <input type="text" id="blogTitle" required>
+
+    <label>Content</label>
+    <textarea id="blogContent" rows="5" required></textarea>
+
+    <label>Status</label>
+    <select id="blogStatus">
+      <option value="draft">Draft</option>
+      <option value="published">Published</option>
+    </select>
+
+    <button type="submit">Save Blog</button>
+  </form>
+
+  <hr>
+
+  <!-- MY BLOGS -->
+  <h2>My Blogs</h2>
+  <div id="myBlogList"></div>
+
+  <hr>
+
+  <!-- PUBLIC BLOGS -->
+  <h2>Public Blogs</h2>
+  <div id="blogList"></div>
+
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
