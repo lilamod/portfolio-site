@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Notes App</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="notes-app">
+<div class="container">
+
+  <header class="top-bar">
+    <h2>📝 My Notes</h2>
+    <button id="logoutBtn">Logout</button>
+  </header>
+
+  <div id="input-box">
+    <input type="text" id="addTitle" placeholder="Title">
+    <textarea id="addText" placeholder="Write a note..."></textarea>
+
+    <div class="actions">
+      <select id="colorInput">
+        <option value="#242529">Default</option>
+        <option value="#3b3f5c">Blue</option>
+        <option value="#5c3b3b">Red</option>
+        <option value="#3b5c3b">Green</option>
+      </select>
+
+      <button id="addNote" onclick="addNote()">➕ Add Note</button>
+    </div>
+  </div>
+
+  <input
+    type="text"
+    id="searchInput"
+    placeholder="🔍 Search notes..."
+    class="search"
+  />
+
+  <div id="notes"></div>
+</div>
+
+
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
